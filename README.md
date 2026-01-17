@@ -40,7 +40,7 @@ sudo pacman -S python
 1. Clone or download this repository to your local machine
 2. Navigate to the project directory:
 ```bash
-cd janice-map
+cd radius-map-osm
 ```
 3. Start the built-in Python HTTP server:
 ```bash
@@ -68,7 +68,7 @@ Contributions are welcome! If you'd like to contribute to this project, please c
 
 MIT License
 
-Copyright (c) 2026 Isaias V. Prestes <isaias.prestes@gmail.com>, Prestes Labs
+Copyright (c) 2026 Isaias V. Prestes  , Prestes Labs
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -90,6 +90,6 @@ SOFTWARE.
 
 ## Author
 
-Isaias V. Prestes <isaias.prestes@gmail.com>  
+Isaias V. Prestes    
 Prestes Labs  
 2026
