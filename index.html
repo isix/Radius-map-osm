@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Address Circle Mapper</title>
+    
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    
+    <!-- Poppins Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📍 Address Circle Mapper</h1>
+            <p>Search for an address and draw a customizable circle around it</p>
+        </header>
+        
+        <div class="main-content">
+            <div class="controls-panel">
+                <div class="panel-header">
+                    <h2>Controls</h2>
+                    <button id="toggle-panel" class="toggle-btn">◀</button>
+                </div>
+                <div class="panel-content">
+                    <div class="input-group">
+                        <label for="address-input">Enter Address:</label>
+                        <div class="input-with-button">
+                            <input type="text" id="address-input" placeholder="e.g., Times Square, New York">
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="radius-input">Circle Radius (meters):</label>
+                        <input type="range" id="radius-slider" min="100" max="20000" value="1000" step="100">
+                        <input type="number" id="radius-input" min="100" max="20000" value="1000">
+                    </div>
+
+                    <div class="input-group">
+                        <label for="circle-color">Circle Color:</label>
+                        <input type="color" id="circle-color" value="#4a6cf7">
+                    </div>
+
+                    <div class="input-group">
+                        <label for="circle-opacity">Circle Opacity:</label>
+                        <input type="range" id="circle-opacity" min="0.1" max="1" step="0.1" value="0.5">
+                    </div>
+
+                    <div class="action-buttons">
+                        <button id="search-btn">🔍 Search</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="map-container">
+                <div id="map"></div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    
+    <!-- html2canvas for export -->
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
